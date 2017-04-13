@@ -7,11 +7,13 @@ This is a small standalone python code snippet to translate cinder volume ID int
 Usage:
 
 Copy this python utility (hpe3par-cinder-id-parser.py) on a system with python runtime installed.
-naviage to the loaction you have saved this file: hpe3par-cinder-id-parser.py.
+Naviage to the loaction you have saved this file: hpe3par-cinder-id-parser.py.
 On the command prompt ($) execute:
 
 $python hpe3par-cinder-id-parser.py
 
 This tool converts Cinder Volume ID ($cinder list) to HPE3PARVirtual Volume Name ($showvv).
+
 Enter Cinder Volume ID: 5308f37c-6142-4824-9433-9ae69fc99246
+
 Mapping HPE3PAR Virtual Volume Name: osv-UwjzfGFCSCSUM5rmn8mSRg
