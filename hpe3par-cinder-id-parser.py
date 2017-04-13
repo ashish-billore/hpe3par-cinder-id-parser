@@ -31,9 +31,9 @@ result_msg = 'Mapping HPE3PAR Virtual Volume Name: '
 print usage_msg
 
 if py3:
-    response = input(prompt_msg)
+    usr_input = input(prompt_msg)
 else:
-    response = raw_input(prompt_msg)
+    usr_input = raw_input(prompt_msg)
 
 
 def convert_cinder2hpe3par_vvol(name):
@@ -63,6 +63,6 @@ def convert_cinder2hpe3par_vvol(name):
 
         print result_msg + "osv-" + vol_encoded
     except Exception:
-        print 'Please check the input and try again!'
+        print 'Please check the input: ' + usr_input + ' and try again!'
 
-convert_cinder2hpe3par_vvol(response)
+convert_cinder2hpe3par_vvol(usr_input)
